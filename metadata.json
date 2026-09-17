@@ -1,0 +1,8 @@
+{
+  "name": "ScrapCollector",
+  "description": "Professional scrap collection and recycling services. Sell aluminium, copper, brass, iron, steel, wiring, HVAC, electronics and industrial recyclable materials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
