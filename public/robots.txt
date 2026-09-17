@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kedaibesiburuk-my.wasmer.app/sitemap.xml

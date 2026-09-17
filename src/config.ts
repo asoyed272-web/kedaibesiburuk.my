@@ -1,5 +1,5 @@
 export const BUSINESS_CONFIG = {
-  name: "kedaibesiburuk",
+  name: "Kedai Besi Buruk",
   tagline: "Turn Your Scrap Into Value.",
   secondaryTagline: "We Collect. We Recycle. We Make a Difference.",
   phone: "+601111545835",
@@ -16,8 +16,8 @@ export const BUSINESS_CONFIG = {
   mapUrl: "https://maps.app.goo.gl/nxfabzXJPdP8r5km6?g_st=awb",
   mapEmbedUrl: "https://maps.google.com/maps?q=Ampang,%20Kuala%20Lumpur,%20Malaysia&t=&z=13&ie=UTF8&iwloc=&output=embed",
   openingHours: {
-    en: "Monday–Saturday: 8:00 AM – 6:00 PM (Sunday: Closed)",
-    ms: "Isnin–Sabtu: 8:00 PG – 6:00 PTG (Ahad: Tutup)"
+    en: "Open 24/7",
+    ms: "Buka 24/7"
   }
 };
 

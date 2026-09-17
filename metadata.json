@@ -1,6 +1,6 @@
 {
-  "name": "ScrapCollector",
-  "description": "Professional scrap collection and recycling services. Sell aluminium, copper, brass, iron, steel, wiring, HVAC, electronics and industrial recyclable materials.",
+  "name": "kedaibesiburuk",
+  "description": "Kedai Besi Buruk – Scrap Collection & Recycling. We collect scrap and recyclable materials and give higher payments for eligible scrap. Contact us for collection services.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

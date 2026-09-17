@@ -287,7 +287,7 @@ export default function Contact({ isSection = false }: ContactProps) {
                 : 'Our team is ready to answer your calls and WhatsApp messages for immediate scrap metal quotes and scheduled collection throughout Ampang and the Klang Valley.'}
             </p>
             <div className="mt-4 pt-3 border-t border-emerald-800 flex items-center justify-between text-xs text-emerald-300">
-              <span>{t.contact.hoursTitle}: 8:00 AM – 6:00 PM</span>
+              <span>{t.contact.hoursTitle}: {language === 'ms' ? BUSINESS_CONFIG.openingHours.ms : BUSINESS_CONFIG.openingHours.en}</span>
               <a 
                 href={BUSINESS_CONFIG.whatsappUrl} 
                 target="_blank" 

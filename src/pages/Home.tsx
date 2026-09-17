@@ -7,6 +7,7 @@ import Prices from './Prices';
 import FAQ from './FAQ';
 import Contact from './Contact';
 import heroImg from '../assets/images/hero_scrap_collection_1789398344728.jpg';
+import yardImg from '../assets/images/general_scrap_yard_1789460653358.jpg';
 import { useLanguage } from '../context/LanguageContext';
 import { useQuickContact } from '../context/QuickContactContext';
 
@@ -130,9 +131,10 @@ export default function Home() {
             </div>
             <div className="mt-10 lg:mt-0 rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src="https://picsum.photos/seed/recycle/800/600" 
+                src={yardImg} 
                 alt={t.environmental.imageAlt} 
                 className="w-full h-full object-cover"
+                loading="lazy"
                 referrerPolicy="no-referrer"
               />
             </div>
