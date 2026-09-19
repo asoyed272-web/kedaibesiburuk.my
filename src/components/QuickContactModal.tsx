@@ -233,7 +233,10 @@ export default function QuickContactModal() {
             </label>
             <input
               id="modal-custom-note"
+              name="custom_message_note"
               type="text"
+              autoComplete="off"
+              spellCheck="false"
               value={customNote}
               onChange={(e) => setCustomNote(e.target.value)}
               placeholder={t.quickContactModal.customNotePlaceholder}

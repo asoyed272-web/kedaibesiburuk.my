@@ -118,7 +118,11 @@ export default function Services({ isSection = false }: ServicesProps) {
             <Search className="h-5 w-5" />
           </div>
           <input
+            id="services-search-input"
+            name="services_search_materials"
             type="text"
+            autoComplete="off"
+            spellCheck="false"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={t.services.searchPlaceholder}

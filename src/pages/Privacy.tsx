@@ -36,6 +36,11 @@ export default function PrivacyPolicy() {
           {t.privacyPolicy.sec3Desc}
         </p>
 
+        <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t.privacyPolicy.secNoLoginTitle}</h2>
+        <p className="mb-6 leading-relaxed">
+          {t.privacyPolicy.secNoLoginDesc}
+        </p>
+
         <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t.privacyPolicy.sec4Title}</h2>
         <p className="mb-6 leading-relaxed">
           {t.privacyPolicy.sec4Desc}

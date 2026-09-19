@@ -299,6 +299,10 @@ export default function QuickScrapForm() {
       {step === 'form' && (
         <form 
           id="quick-scrap-form"
+          action="#"
+          method="POST"
+          role="form"
+          aria-label="Scrap Metal Request Form"
           onSubmit={handleContinueToPreview} 
           noValidate
           className="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 sm:p-8 space-y-6"
@@ -313,7 +317,10 @@ export default function QuickScrapForm() {
             </label>
             <input
               id="customer-name"
+              name="scrap_customer_name"
               type="text"
+              autoComplete="name"
+              spellCheck="false"
               required
               value={name}
               onChange={(e) => {
@@ -355,7 +362,11 @@ export default function QuickScrapForm() {
                 <Search className="h-4 w-4" />
               </div>
               <input
+                id="material-filter-search"
+                name="scrap_material_filter"
                 type="text"
+                autoComplete="off"
+                spellCheck="false"
                 value={materialFilter}
                 onChange={(e) => setMaterialFilter(e.target.value)}
                 placeholder={language === 'ms' ? 'Cari kategori barang lusuh...' : 'Filter scrap materials...'}
@@ -461,7 +472,10 @@ export default function QuickScrapForm() {
             <div className="flex gap-2">
               <input
                 id="approx-weight"
+                name="scrap_estimated_weight"
                 type="text"
+                autoComplete="off"
+                spellCheck="false"
                 required
                 value={weight}
                 onChange={(e) => {
@@ -478,6 +492,7 @@ export default function QuickScrapForm() {
               <div className="w-32 sm:w-36 shrink-0">
                 <select
                   id="weight-unit-select"
+                  name="scrap_weight_unit"
                   value={unit}
                   onChange={(e) => setUnit(e.target.value as WeightUnit)}
                   className="w-full h-full px-3 py-3 text-base rounded-xl border border-gray-300 bg-white font-medium text-gray-800 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100 focus:outline-hidden cursor-pointer"
@@ -508,7 +523,10 @@ export default function QuickScrapForm() {
             </label>
             <input
               id="customer-location"
+              name="scrap_pickup_area"
               type="text"
+              autoComplete="address-level2"
+              spellCheck="false"
               required
               value={location}
               onChange={(e) => {
@@ -548,9 +566,12 @@ export default function QuickScrapForm() {
             <input
               ref={fileInputRef}
               id="scrap-photo-input"
+              name="scrap_photo_uploads"
               type="file"
               accept="image/*"
               multiple
+              tabIndex={-1}
+              aria-hidden="true"
               onChange={handlePhotoUpload}
               className="hidden"
             />
@@ -604,6 +625,9 @@ export default function QuickScrapForm() {
             </label>
             <textarea
               id="customer-notes"
+              name="scrap_additional_notes"
+              autoComplete="off"
+              spellCheck="false"
               rows={2}
               value={notes}
               onChange={(e) => setNotes(e.target.value)}

@@ -357,6 +357,8 @@ export interface Translations {
     sec2List: string[];
     sec3Title: string;
     sec3Desc: string;
+    secNoLoginTitle: string;
+    secNoLoginDesc: string;
     sec4Title: string;
     sec4Desc: string;
   };
@@ -868,7 +870,9 @@ export const translations: Record<Language, Translations> = {
       ],
       sec3Title: "3. WhatsApp Communication",
       sec3Desc: "Our website utilizes WhatsApp as a primary means of communication for requests and inquiries. When you submit a form, your data is formatted into a pre-filled message and opened via the WhatsApp application on your device.",
-      sec4Title: "4. Contact Us",
+      secNoLoginTitle: "4. No User Accounts, Logins, or Credential Collection",
+      secNoLoginDesc: "Kedai Besi Buruk does NOT operate any user login, account registration, password authentication, or credential collection systems. We will never ask you for passwords, PINs, or banking login credentials. All pickup requests and inquiries are conducted directly via telephone and WhatsApp.",
+      sec4Title: "5. Contact Us",
       sec4Desc: "If you have questions or comments about this policy, you may contact us using the contact details provided on our Contact page.",
     },
     termsConditions: {
@@ -1385,7 +1389,9 @@ Please confirm the pickup schedule.`,
       ],
       sec3Title: "3. Komunikasi Melalui WhatsApp",
       sec3Desc: "Laman web kami menggunakan aplikasi WhatsApp sebagai saluran komunikasi utama untuk permintaan dan pertanyaan. Apabila anda menghantar borang, maklumat anda diformatkan menjadi pesanan tersedia dan dibuka terus melalui aplikasi WhatsApp pada peranti anda.",
-      sec4Title: "4. Hubungi Kami",
+      secNoLoginTitle: "4. Tiada Akaun Pengguna, Log Masuk atau Pengumpulan Kata Laluan",
+      secNoLoginDesc: "Kedai Besi Buruk TIDAK mempunyai sebarang sistem log masuk, pendaftaran akaun, pengesahan kata laluan atau pengumpulan kelayakan pengguna. Kami tidak akan sekali-kali meminta kata laluan, nombor PIN, atau maklumat log masuk perbankan anda. Semua urusan sebut harga dan penetapan jadual kutipan dijalankan terus melalui panggilan telefon dan WhatsApp rasmi kami.",
+      sec4Title: "5. Hubungi Kami",
       sec4Desc: "Sekiranya anda mempunyai sebarang soalan atau kemusykilan mengenai dasar ini, anda boleh menghubungi kami melalui butiran yang tertera di halaman Hubungi Kami.",
     },
     termsConditions: {
