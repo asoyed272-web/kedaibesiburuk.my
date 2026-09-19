@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kedaibesiburuk-my.wasmer.app/sitemap.xml
+Sitemap: https://kedaibesiburuk-malaysia.netlify.app/sitemap.xml
